@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" pkg="com.shop.webapp" v="4.2.4" rws="_14996155017862" Pws="_14996155017862" cws="_14996155017862" sm="false" xs="false" id="_14996155017861" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd">
+    <jpa:entity lbl-ref="_14996155460595" compositePrimaryKeyClass="ProductEntityPK" abs="false" class="ProductEntity" v="true" jbn="false" xre="false" m="false" rootElement="_14996155017861" id="_1499615511431">
+        <jpa:ath>Yasas Sri</jpa:ath>
+        <jpa:attributes>
+            <jpa:basic attribute-type="String" v="true" name="productName" id="_14996155460595"/>
+            <jpa:basic attribute-type="String" v="true" name="productPrice" id="_14996155509886"/>
+            <jpa:basic attribute-type="String" v="true" name="ProductQty" id="_14996155584177"/>
+            <jpa:id attribute-type="Long" v="true" name="id" id="_14996155116323">
+                <jpa:generated-value strategy="AUTO"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:nq e="false" name="ProductEntity.findAll">
+            <jpa:query>Select e from ProductEntity e</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="ProductEntity.findByProductName">
+            <jpa:query>Select p from ProductEntity p where p.productName=:productName</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="ProductEntity.findByProductPrice">
+            <jpa:query>Select p from ProductEntity p where p.productPrice=:productPrice</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="ProductEntity.findByProductQty">
+            <jpa:query>Select p from ProductEntity p where p.ProductQty=:ProductQty</jpa:query>
+        </jpa:nq>
+        <jpa:table name="PRODUCTENTITY"/>
+    </jpa:entity>
+    <jpa:snp loc="BEFORE_PACKAGE" e="true">/**
+ * Author Yasas
+ */</jpa:snp>
+    <jpa:c/>
+    <jpa:wsl>
+        <jpa:ws n="Main" id="_14996155017862">
+            <i ref="_1499615511431" x="51" y="66"/>
+        </jpa:ws>
+    </jpa:wsl>
+</jpa:entity-mappings>

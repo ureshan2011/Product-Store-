@@ -1,0 +1,31 @@
+
+<div>
+    <h2><span translate="webapp.productEntity.detail.title">Product Entity</span> {{vm.productEntity.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="webapp.productEntity.productName">Product Name</span></dt>
+        <dd>
+            <span>{{vm.productEntity.productName}}</span>
+        </dd>
+        <dt><span translate="webapp.productEntity.productPrice">Product Price</span></dt>
+        <dd>
+            <span>{{vm.productEntity.productPrice}}</span>
+        </dd>
+        <dt><span translate="webapp.productEntity.ProductQty">Product Qty</span></dt>
+        <dd>
+            <span>{{vm.productEntity.ProductQty}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="product-entity-detail.edit({id:vm.productEntity.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

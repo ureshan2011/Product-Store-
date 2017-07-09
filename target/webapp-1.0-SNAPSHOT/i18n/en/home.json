@@ -1,0 +1,19 @@
+{
+    "home": {
+        "title": "Welcome to Product Store Portal!",
+        "subtitle": "Have a Nice Day",
+        "logged": {
+            "message": "You are logged in as user \"{{username}}\"."
+        },
+        "question": "",
+        "link": {
+            "homepage": "Homepage",
+            "stackoverflow": "",
+            "bugtracker": "",
+            "chat": "",
+            "follow": ""
+        },
+        "like": "",
+        "github": "GitHub"
+    }
+}

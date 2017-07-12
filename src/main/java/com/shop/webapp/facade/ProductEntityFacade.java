@@ -7,7 +7,7 @@ import javax.inject.Inject;
 import com.shop.webapp.ProductEntity;
 
 @Stateless
-@Named("productEntity")
+@Named("PRODUCTENTITY")
 public class ProductEntityFacade extends AbstractFacade<ProductEntity, Long> {
 
     @Inject

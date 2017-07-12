@@ -37,6 +37,7 @@ public class ApplicationConfig extends Application {
         resources.add(com.shop.webapp.controller.ProductEntityController.class);
         resources.add(com.shop.webapp.controller.UserController.class);
         resources.add(com.shop.webapp.controller.UserJWTController.class);
+        resources.add(com.shop.webapp.entities.service.ProductentityFacadeREST.class);
         resources.add(com.shop.webapp.security.SecurityUtils.class);
         resources.add(com.shop.webapp.security.jwt.JWTAuthenticationFilter.class);
     }

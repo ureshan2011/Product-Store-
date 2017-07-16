@@ -1,18 +1,26 @@
 <div>
-    <h2 translate="webapp.productEntity.home.title">Product Entities</h2>
+    <h2 translate="webapp.productEntity.home.title">Product Entities 3</h2>
     <jhi-alert></jhi-alert>
-    <div class="container-fluid">
+
+    
+    
+    
+    
+    <div class="container-fluid" >
         <div class="row">
             <div class="col-xs-4 no-padding-left">
-                <button class="btn btn-primary" ui-sref="product-entity.new" >
+                <div ng-class="{active: vm.$state.includes('admin')}"  has-authority="ROLE_ADMIN">
+                <button class="btn btn-primary" ui-sref="product-entity.new" has-authority="ROLE_ADMIN" >
                     <span class="glyphicon glyphicon-plus"></span>
                     <span  translate="webapp.productEntity.home.createLabel">
                         Create New Product Entity
                     </span>
                 </button>
             </div>
+            </div>
         </div>
     </div>
+
     <br/>
     <div class="table-responsive">
         <table class="jh-table table table-striped">
@@ -40,13 +48,13 @@
                                 <span class="glyphicon glyphicon-eye-open"></span>
                                 <span class="hidden-xs hidden-sm" translate="entity.action.view"></span>
                             </button>
-                            <button type="submit"
+                            <button type="submit" has-authority="ROLE_ADMIN"
                                     ui-sref="product-entity.edit({id:productEntity.id})"
                                     class="btn btn-primary btn-sm">
                                 <span class="glyphicon glyphicon-pencil"></span>
                                 <span class="hidden-xs hidden-sm" translate="entity.action.edit"></span>
                             </button>
-                            <button type="submit"
+                            <button type="submit" has-authority="ROLE_ADMIN"
                                     ui-sref="product-entity.delete({id:productEntity.id})"
                                     class="btn btn-danger btn-sm">
                                 <span class="glyphicon glyphicon-remove-circle"></span>
